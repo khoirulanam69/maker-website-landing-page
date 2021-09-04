@@ -141,7 +141,7 @@ $ternary-color: #75e3ea;
     width: 49%;
     img {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
   }
 }
@@ -413,8 +413,12 @@ $ternary-color: #75e3ea;
   }
 
   .works {
-    img {
+    flex-direction: column;
+    .work {
       width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
 
