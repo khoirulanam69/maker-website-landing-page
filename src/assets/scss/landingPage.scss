@@ -137,9 +137,12 @@ $ternary-color: #75e3ea;
 .works {
   @include flex-between();
   flex-wrap: wrap;
-  img {
-    width: 615px;
-    margin-bottom: 20px;
+  .work {
+    width: 48%;
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 }
 
