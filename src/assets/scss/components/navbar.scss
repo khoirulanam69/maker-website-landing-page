@@ -1,0 +1,99 @@
+@import "../mixin";
+
+$secondary-color: #f4f5f8;
+$primary-color: #8c30f5;
+
+nav {
+  @include flex-between($align: center);
+  position: fixed;
+  top: 0;
+  width: 84%;
+  padding: 0 8%;
+  min-height: 70px;
+  z-index: 111111;
+  transition: 0.2s;
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  ul {
+    display: flex;
+    padding-inline-start: 0;
+    li {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      a {
+        color: #494a50;
+        font-weight: 600;
+      }
+    }
+  }
+  .menu-icons {
+    li {
+      @include flex-center();
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: rgba($color: $secondary-color, $alpha: 0.3);
+      svg {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+  .menu-bars {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    li {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  nav {
+    flex-direction: column;
+    min-height: 55px;
+    background: $primary-color !important;
+    .navbar-brand {
+      color: #fff !important;
+      position: absolute;
+      left: 8%;
+      top: 12px;
+    }
+    ul {
+      display: none;
+      &:not(:nth-child(3)) {
+        margin-top: 60px;
+        margin-bottom: 0;
+      }
+      a {
+        color: #fff !important;
+      }
+    }
+    .menu-bars {
+      width: 15px;
+      height: 20px;
+      right: 8%;
+      top: 19px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.5s;
+      .bar {
+        @include bars();
+      }
+    }
+    .menu-bars.open .bar {
+      @include bar-animation();
+    }
+  }
+}

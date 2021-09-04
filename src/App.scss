@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@import "assets/scss/landingPage";
+
+#root {
+  position: relative;
+  overflow: hidden;
+}
+
+.App {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  .jumbotron,
+  .card-strengths,
+  .about,
+  .approach,
+  .selected-work {
+    margin: 0 8%;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  p {
+    line-height: 32px;
+  }
+  a {
+    font-size: 18px;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  .btn-primary {
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    background-color: $primary-color;
+  }
+  .card-icon {
+    padding: 18px;
+    font-size: 24px;
+    border-radius: 50%;
+    color: $primary-color;
+    background-color: $secondary-color;
+  }
+  .divider {
+    height: 150px;
+  }
+}

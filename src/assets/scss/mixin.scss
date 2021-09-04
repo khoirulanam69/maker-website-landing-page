@@ -1,0 +1,62 @@
+@mixin flex-between($align: baseline) {
+  display: flex;
+  justify-content: space-between;
+  align-items: $align;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+
+@mixin arrow-down($size) {
+  border-top: $size solid #fff;
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+}
+
+@mixin clip-path-circle($size) {
+  -webkit-clip-path: circle($size at 50% 50%);
+  clip-path: circle($size at 50% 50%);
+}
+
+@mixin bars {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: 0.5s;
+  &::before,
+  &::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    transition: 0.5s;
+  }
+  &::before {
+    transform: translateY(-5px);
+  }
+  &::after {
+    transform: translateY(5px);
+  }
+}
+
+@mixin bar-animation {
+  transform: translateX(-50px);
+  background: transparent;
+  transition: 0.5s;
+  &::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  &::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+}
