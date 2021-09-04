@@ -17,7 +17,7 @@ $ternary-color: #75e3ea;
   @include flex-between(center);
   position: relative;
   z-index: 1;
-  height: 95vh;
+  height: 35pc;
   .section {
     width: 45%;
     .desc {
@@ -365,7 +365,7 @@ $ternary-color: #75e3ea;
   }
   p {
     font-size: 14px !important;
-    line-height: 18px !important;
+    line-height: 22px !important;
   }
   a {
     font-size: 14px !important;
@@ -385,10 +385,6 @@ $ternary-color: #75e3ea;
   .jumbotron {
     color: #fff;
     .btn-primary {
-      position: absolute;
-      left: 47%;
-      bottom: -100px;
-      transform: translateX(-50%);
       box-shadow: 0 0 4px #000;
     }
     .image {
