@@ -1,7 +1,7 @@
 import './App.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faCopyright } from '@fortawesome/free-regular-svg-icons';
 import { faInstagram, faDribbble, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
@@ -68,7 +68,7 @@ function Jumbotron() {
       </div>
       <div className="image">
         <div className="image-wrapper">
-          <img src={Laptop} />
+          <img src={Laptop} alt="img-laptop" />
         </div>
       </div>
       <div className="circle1"></div>
@@ -202,7 +202,7 @@ function ClientsSpeak() {
                 <div className="arrow-down" />
               </div>
               <div className="client">
-                <img src={Client}></img>
+                <img src={Client} alt="img-client"></img>
                 <div className="client-data">
                   <p>Jane Cooper</p>
                   <p>CEO, ABC Corporation</p>
@@ -216,7 +216,7 @@ function ClientsSpeak() {
                 <div className="arrow-down" />
               </div>
               <div className="client">
-                <img src={Client} />
+                <img src={Client} alt="img-client" />
                 <div className="client-data">
                   <p>Jane Cooper</p>
                   <p>CEO, ABC Corporation</p>
@@ -234,7 +234,7 @@ function ClientsSpeak() {
                 <div className="arrow-down" />
               </div>
               <div className="client">
-                <img src={Client}></img>
+                <img src={Client} alt="img-client"></img>
                 <div className="client-data">
                   <p>Jane Cooper</p>
                   <p>CEO, ABC Corporation</p>
@@ -248,7 +248,7 @@ function ClientsSpeak() {
                 <div className="arrow-down" />
               </div>
               <div className="client">
-                <img src={Client} />
+                <img src={Client} alt="img-client" />
                 <div className="client-data">
                   <p>Jane Cooper</p>
                   <p>CEO, ABC Corporation</p>
