@@ -15,6 +15,7 @@ import Tourist from './assets/img/tourist.png';
 import Plants from './assets/img/plants.png';
 import Sport from './assets/img/sport.png';
 
+const url = "http://localhost:3000/";
 
 function Navbar() {
   const handleMenuClick = () => {
@@ -36,16 +37,16 @@ function Navbar() {
   return (
     <nav className="navbar" >
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href={url}>About</a></li>
+        <li><a href={url}>Pricing</a></li>
+        <li><a href={url}>Contact</a></li>
       </ul>
       <div className="navbar-brand">WEBO</div>
       <ul className="menu-icons">
-        <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon={faDribbble} /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon={faYoutube} /></a></li>
+        <li><a href={url}><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href={url}><FontAwesomeIcon icon={faDribbble} /></a></li>
+        <li><a href={url}><FontAwesomeIcon icon={faTwitter} /></a></li>
+        <li><a href={url}><FontAwesomeIcon icon={faYoutube} /></a></li>
       </ul>
       <div className="menu-bars" onClick={handleMenuClick}>
         <div className="bar" />
@@ -64,7 +65,7 @@ function Jumbotron() {
         <div className="desc">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         </div>
-        <a href="#" className="btn-primary">Get Started</a>
+        <a href={url} className="btn-primary">Get Started</a>
       </div>
       <div className="image">
         <div className="image-wrapper">
@@ -115,7 +116,7 @@ function About() {
       <div className="section">
         <h2>About</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <a href="#">Get started <FontAwesomeIcon icon={faArrowRight} /></a>
+        <a href={url}>Get started <FontAwesomeIcon icon={faArrowRight} /></a>
       </div>
     </div>
   )
@@ -177,7 +178,7 @@ function BtnCta() {
   return (
     <div className="btn-cta">
       <h2>Craft your new website with WEBO</h2>
-      <a href="#" className="btn-primary">Get Started</a>
+      <a href={url} className="btn-primary">Get Started</a>
     </div>
   )
 }
@@ -285,35 +286,35 @@ function Footer() {
       <div className="links">
         <div className="product">
           <h4>Product</h4>
-          <a href="#"><p>Overview</p></a>
-          <a href="#"><p>Features</p></a>
-          <a href="#"><p>Tutorials</p></a>
-          <a href="#"><p>Pricing</p></a>
-          <a href="#"><p>Releases</p></a>
+          <a href={url}><p>Overview</p></a>
+          <a href={url}><p>Features</p></a>
+          <a href={url}><p>Tutorials</p></a>
+          <a href={url}><p>Pricing</p></a>
+          <a href={url}><p>Releases</p></a>
         </div>
         <div className="company">
           <h4>Company</h4>
-          <a href="#"><p>About</p></a>
-          <a href="#"><p>Press</p></a>
-          <a href="#"><p>Careers</p></a>
-          <a href="#"><p>Contact</p></a>
-          <a href="#"><p>Partners</p></a>
+          <a href={url}><p>About</p></a>
+          <a href={url}><p>Press</p></a>
+          <a href={url}><p>Careers</p></a>
+          <a href={url}><p>Contact</p></a>
+          <a href={url}><p>Partners</p></a>
         </div>
         <div className="support">
           <h4>Support</h4>
-          <a href="#"><p>Help Center</p></a>
-          <a href="#"><p>Term of Cervice</p></a>
-          <a href="#"><p>Legal</p></a>
-          <a href="#"><p>Privacy Police</p></a>
-          <a href="#"><p>Status</p></a>
+          <a href={url}><p>Help Center</p></a>
+          <a href={url}><p>Term of Cervice</p></a>
+          <a href={url}><p>Legal</p></a>
+          <a href={url}><p>Privacy Police</p></a>
+          <a href={url}><p>Status</p></a>
         </div>
         <div className="follow">
           <h4>Follow Us</h4>
-          <a href="#"><p>Facebook</p></a>
-          <a href="#"><p>Twitter</p></a>
-          <a href="#"><p>Dribbble</p></a>
-          <a href="#"><p>Instagram</p></a>
-          <a href="#"><p>LinkedIn</p></a>
+          <a href={url}><p>Facebook</p></a>
+          <a href={url}><p>Twitter</p></a>
+          <a href={url}><p>Dribbble</p></a>
+          <a href={url}><p>Instagram</p></a>
+          <a href={url}><p>LinkedIn</p></a>
         </div>
       </div>
     </div>
