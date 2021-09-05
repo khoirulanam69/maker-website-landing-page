@@ -11,13 +11,31 @@ $ternary-color: #75e3ea;
   top: -180px;
   right: -180px;
   background-color: $primary-color;
+  &::before {
+    content: "";
+    @include circle(80px);
+    position: absolute;
+    bottom: 15rem;
+    left: -5rem;
+    z-index: 1;
+    background-color: #ffc278;
+  }
+  &::after {
+    content: "";
+    @include circle(80px);
+    position: absolute;
+    bottom: -7rem;
+    left: 10rem;
+    z-index: 1;
+    background-color: $ternary-color;
+  }
 }
 
 .jumbotron {
   @include flex-between(center);
   position: relative;
-  z-index: 1;
-  height: 35pc;
+  min-height: 80vh;
+  z-index: 11;
   .section {
     width: 45%;
     .desc {
@@ -32,27 +50,12 @@ $ternary-color: #75e3ea;
       transform: perspective(600px);
       transform-style: preserve-3d;
       img {
-        position: absolute;
         width: 100%;
         overflow: hidden;
         border-radius: 8px;
         transform: rotateY(10deg) rotateZ(-5deg);
       }
     }
-  }
-  .circle1 {
-    @include circle(80px);
-    position: absolute;
-    top: 50%;
-    right: 41%;
-    background-color: #ffc278;
-  }
-  .circle2 {
-    @include circle(80px);
-    position: absolute;
-    bottom: 0;
-    right: 20%;
-    background-color: $ternary-color;
   }
 }
 
@@ -307,18 +310,10 @@ $ternary-color: #75e3ea;
   }
   .jumbotron {
     .section {
-      position: absolute;
-      width: 70%;
-      z-index: 1;
-      h1,
-      p {
-        text-shadow: 0 0 4px #a3a5aa !important;
-      }
+      width: 49%;
     }
     .image {
-      width: 70%;
-      right: 0;
-      position: absolute;
+      width: 49%;
     }
   }
 
@@ -331,7 +326,13 @@ $ternary-color: #75e3ea;
 
 @media (max-width: 768px) {
   .jumbotron {
+    flex-direction: column-reverse;
+    margin-top: 5rem !important;
+    .image {
+      width: 70%;
+    }
     .section {
+      margin-top: 2rem;
       width: 100%;
     }
   }
@@ -383,12 +384,11 @@ $ternary-color: #75e3ea;
   }
 
   .jumbotron {
-    color: #fff;
-    .btn-primary {
-      box-shadow: 0 0 4px #000;
-    }
     .image {
       width: 95%;
+    }
+    .section {
+      margin-top: 2rem;
     }
   }
 

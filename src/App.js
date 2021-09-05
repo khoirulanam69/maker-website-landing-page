@@ -72,8 +72,6 @@ function Jumbotron() {
           <img src={Laptop} alt="img-laptop" />
         </div>
       </div>
-      <div className="circle1"></div>
-      <div className="circle2"></div>
     </div>
   )
 }
